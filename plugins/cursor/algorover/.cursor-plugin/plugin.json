@@ -3,7 +3,7 @@
   "version": "0.0.17",
   "description": "Lightweight router for the local AlgoRover Live Runtime Host.",
   "author": {
-    "name": "Rivendell Holdings Investment Limited"
+    "name": "AlgoRover"
   },
   "logo": "assets/icon.png",
   "skills": "./skills/",

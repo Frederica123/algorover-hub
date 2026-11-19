@@ -35,6 +35,7 @@ export function checkPlugins(root = repositoryRoot) {
       ? ".agents/plugins/marketplace.json" : `.${assistant}-plugin/marketplace.json`;
     const marketplace = json(marketplacePath);
     assert.equal(marketplace.plugins.length, release.products.length, marketplacePath);
+    if (assistant !== "codex") assert.equal(marketplace.owner.name, "AlgoRover", marketplacePath);
     for (const product of release.products) {
       const relative = `plugins/${assistant}/${product.name}`;
       const plugin = join(root, relative);
@@ -43,6 +44,8 @@ export function checkPlugins(root = repositoryRoot) {
       const manifest = json(`${relative}/${manifestPath}`);
       assert.equal(manifest.name, product.name, relative);
       assert.equal(manifest.version, product.version, relative);
+      assert.equal(manifest.author.name, "AlgoRover", relative);
+      if (assistant === "codex") assert.equal(manifest.interface.developerName, "AlgoRover", relative);
       assert.equal(json(`${relative}/delivery.json`).product_version, product.version, relative);
       const entry = marketplace.plugins.find((entry) => entry.name === product.name);
       const source = assistant === "codex" ? entry?.source?.path : entry?.source;
