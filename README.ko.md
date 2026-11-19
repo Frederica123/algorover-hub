@@ -1,6 +1,6 @@
 # AlgoRover
 
-> **AlgoRover는 Codex, Claude Code, Cursor에서 사용하는 무료 AI 퀀트 에이전트입니다.**
+> **AlgoRover는 Codex, Claude Code, Cursor에서 전략 연구, 재현 가능한 백테스트, 로컬 실행을 지원하는 무료 AI 퀀트 도구입니다.**
 >
 > 4,000개 이상의 트레이딩 전략을 탐색하고, AI 대화로 전략을 수정하며, 재현 가능한 백테스트와 거래소 모의거래, 사용자가 승인한 실거래를 실행할 수 있습니다.
 >

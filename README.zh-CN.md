@@ -1,6 +1,6 @@
 # AlgoRover
 
-> **AlgoRover 是面向 Codex、Claude Code 和 Cursor 的免费 AI 量化助手。**
+> **AlgoRover 是一款免费 AI 量化工具，可在 Codex、Claude Code 和 Cursor 中进行策略研究、可复现回测和本地执行。**
 >
 > 探索 4,000+ 交易策略，通过 AI 对话调整策略，运行可复现回测、交易所模拟交易，以及经用户确认的实盘交易。
 >

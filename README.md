@@ -1,6 +1,6 @@
 # AlgoRover
 
-> **AlgoRover is a free AI quant agent for Codex, Claude Code, and Cursor.**
+> **AlgoRover is a free AI tool for quantitative strategy research, reproducible backtesting, and local execution in Codex, Claude Code, and Cursor.**
 >
 > Explore 4,000+ trading strategies, customize them through AI conversations, and run reproducible backtests, exchange demo trading, and user-approved live execution.
 >
