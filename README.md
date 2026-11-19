@@ -7,7 +7,7 @@
 
 AlgoRover, formerly EdgePilot. This is the same project under a new brand, with its development history and community preserved.
 
-A free AI tool for quantitative strategy research, reproducible backtesting, and local execution in Codex or Claude Code. Explore 4,000+ strategies, customize them through AI conversations, and test your own trading ideas.
+A free AI tool for quantitative strategy research, reproducible backtesting, and local execution in Codex, Claude Code, or Cursor. Explore 4,000+ strategies, customize them through AI conversations, and test your own trading ideas.
 
 Use **AlgoRover Research** for strategy discovery and historical backtesting. Use **AlgoRover Live** for exchange demo trading and automated live execution.
 
@@ -122,8 +122,8 @@ Use the Cursor-specific plugin copies:
 
 | Edition | Plugin directory |
 | :--- | :--- |
-| Research | `plugins/cursor/edgepilot-research` |
-| Live | `plugins/cursor/AlgoRover` |
+| Research | `plugins/cursor/algorover-research` |
+| Live | `plugins/cursor/algorover` |
 
 Copy the selected directory into Cursor's local plugin directory, then reload the window:
 
@@ -132,7 +132,7 @@ Copy the selected directory into Cursor's local plugin directory, then reload th
 | macOS and Linux | `~/.cursor/plugins/local/` |
 | Windows | `%USERPROFILE%\.cursor\plugins\local\` |
 
-The Codex and Claude plugin copies use different host bindings. For Teams or Enterprise, import the repository through **Dashboard → Plugins and MCPs**.
+Each assistant has its own plugin copy and host bindings. For Teams or Enterprise, import the repository through **Dashboard → Plugins and MCPs**.
 
 ### Start your first session
 
@@ -274,3 +274,22 @@ The marketplace is generated from production plugin ZIPs through the source repo
 README images are kept in `readme-assets/`. Plugin artwork stays in each generated plugin's own `assets/` directory.
 
 New installation marketplace ID: `algorover`.
+
+## Plugin maintenance
+
+Each `plugins/<assistant>/<product>` directory serves only that assistant. Keep only
+its own plugin manifest, use its MCP launch configuration, and read that same manifest
+in the resolver and VPS copy list. Skills must name the assistant they ship with.
+Runtime code, discovery schemas, delivery bindings, and artwork can be shared across
+assistants.
+
+After generating or editing plugin copies, run:
+
+```bash
+node scripts/check-plugins.mjs
+node --test tests/plugins.test.mjs
+```
+
+Apply the same assistant isolation in the upstream `marketplace-sync` generator before
+publishing regenerated copies. Refresh only the generated tree digests in `release.json`
+after edits; input archive hashes and source digests describe the original release ZIPs.

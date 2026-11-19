@@ -464,7 +464,7 @@ install on this computer instead; the VPS can still be deployed later.
    target success. Report other failures and their script-provided recovery action.
    For `stale_session`, reload the plugin session. A lower version number is not stale: `algorover_runtime_start` installs this plugin's bound release.
    If its message is `runtime_platform_unsupported`, this plugin release has no Runtime for the user's operating system and CPU yet: say so, do not retry, repair or reload, and suggest updating the plugin after a release for that platform.
-   For `host_start_timeout`, tell the user that reloading or restarting Cursor does not
+   For `host_start_timeout`, tell the user that reloading or restarting Codex does not
    restart the Host. The Host is a separate sign-in task. Do not invent a shell command
    to end it, and do not ask the user to end it in Task Scheduler. Call
    `algorover_runtime_start` again: that start ends a Host task that is still occupying

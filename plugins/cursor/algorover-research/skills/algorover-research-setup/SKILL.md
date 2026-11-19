@@ -23,4 +23,4 @@ English.
 If `algorover_runtime_status` or `algorover_runtime_start` reports
 `message=node_version_unsupported`, stop here: the machine's Node.js is older than the
 plugin needs. Ask the user to install the current Node.js LTS (22 or newer) from
-nodejs.org, restart Codex and run this setup again.
+nodejs.org, restart Cursor and run this setup again.

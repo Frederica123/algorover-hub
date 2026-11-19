@@ -369,7 +369,7 @@ as part of it.
    anything else, quoting `cause` and `step` exactly as the diagnostics text gives them:
    - `message=node_version_unsupported`: the Node that runs this plugin is too old
      (`node_version` versus `node_required`). Ask the user to install the current Node.js
-     LTS (22 or newer) from nodejs.org and restart Codex; nothing else works until then.
+     LTS (22 or newer) from nodejs.org and restart Cursor; nothing else works until then.
    - `channel_unavailable` whose `detail:` line has a certificate `cause`
      (`DEPTH_ZERO_SELF_SIGNED_CERT`, `SELF_SIGNED_CERT_IN_CHAIN`, `UNABLE_TO_VERIFY_LEAF_SIGNATURE`,
      `UNABLE_TO_GET_ISSUER_CERT_LOCALLY`, `CERT_HAS_EXPIRED`, `ERR_SSL_WRONG_VERSION_NUMBER`):

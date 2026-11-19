@@ -22,4 +22,4 @@ Use the [`algorover` router skill](../algorover/SKILL.md) for setup.
 
 If `algorover_runtime_status` or `algorover_runtime_start` reports
 `message=node_version_unsupported`, stop setup. Ask the user to install a supported
-Node.js LTS release, restart Codex and run setup again.
+Node.js LTS release, restart Claude Code and run setup again.

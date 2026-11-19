@@ -131,8 +131,8 @@ async function handleRequest(request) {
       if (!new Set(["en", "ko", "zh-CN", "zh-TW"]).has(locale)) throw new BridgeError("invalid_locale");
       const connection = await healthyConnection();
       if (connection === null) return resultResponse(id, toolResult({ ...(await runtimeStatus()), message: "runtime_not_ready" }, true));
-      // The Host issues the view and keeps its answers and recommendation; the thread id in _meta
-      // (Codex) binds the view to this conversation.
+      // The Host issues the view and keeps its answers and recommendation; client metadata
+      // binds the view to this conversation when the assistant supports it.
       const opened = await forward(connection, { jsonrpc: "2.0", id: "bridge-view-open", method: "tools/call", params: {
         name: "algorover_view_open", arguments: { kind: "onboarding", params: { locale } },
         ...(isPlainObject(request.params?._meta) ? { _meta: request.params._meta } : {}),

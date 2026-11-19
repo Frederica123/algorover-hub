@@ -149,8 +149,8 @@ async function handleRequest(request) {
       if (!new Set(["en", "ko", "zh-CN", "zh-TW"]).has(locale)) throw new BridgeError("invalid_locale");
       const connection = await healthyConnection();
       if (connection === null) return resultResponse(id, toolResult({ ...(await runtimeStatus()), message: "runtime_not_ready" }, true));
-      // The Host issues the view and keeps its answers and recommendation; the thread id in _meta
-      // (Codex) binds the view to this conversation.
+      // The Host issues the view and keeps its answers and recommendation; client metadata
+      // binds the view to this conversation when the assistant supports it.
       const opened = await forward(connection, { jsonrpc: "2.0", id: "bridge-view-open", method: "tools/call", params: {
         name: "algorover_view_open", arguments: { kind: "onboarding", params: { locale } },
         ...(isPlainObject(request.params?._meta) ? { _meta: request.params._meta } : {}),
@@ -1463,7 +1463,7 @@ function selectRuntimeBinding() {
 
 function readPluginVersion() {
   try {
-    const value = JSON.parse(readFileSync(join(root, ".codex-plugin", "plugin.json"), "utf8"));
+    const value = JSON.parse(readFileSync(join(root, ".claude-plugin", "plugin.json"), "utf8"));
     return typeof value.version === "string" ? value.version : "0.0.0";
   } catch { return "0.0.0"; }
 }
@@ -1583,7 +1583,7 @@ const REMOTE_NODE = { version: "24.22.2", file: "node-v24.22.2-linux-x64.tar.gz"
   sha256: "361718c444e49af2ca5a110c83ba6a8901143f23ab285ebbef0341f391f482a9" };
 const MAXIMUM_PASSWORD_FAILURES = 2;
 // Remote files of one plugin copy: the bridge itself, its bundled bootstrap and the data they read.
-const REMOTE_PLUGIN_FILES = ["resolver.mjs", "bootstrap.mjs", "delivery.json", ".codex-plugin/plugin.json",
+const REMOTE_PLUGIN_FILES = ["resolver.mjs", "bootstrap.mjs", "delivery.json", ".claude-plugin/plugin.json",
   "strategy-discover-input.json", "strategy-discover-output.json"];
 const LIFECYCLE_TOOL_NAMES = new Set(["algorover_runtime_start", "algorover_runtime_update", "algorover_runtime_repair"]);
 const PRODUCT_NAME = profile === "live" ? "Live" : "Research";

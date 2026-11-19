@@ -369,7 +369,7 @@ as part of it.
    anything else, quoting `cause` and `step` exactly as the diagnostics text gives them:
    - `message=node_version_unsupported`: the Node that runs this plugin is too old
      (`node_version` versus `node_required`). Ask the user to install the current Node.js
-     LTS (22 or newer) from nodejs.org and restart Codex; nothing else works until then.
+     LTS (22 or newer) from nodejs.org and restart Claude Code; nothing else works until then.
    - `channel_unavailable` whose `detail:` line has a certificate `cause`
      (`DEPTH_ZERO_SELF_SIGNED_CERT`, `SELF_SIGNED_CERT_IN_CHAIN`, `UNABLE_TO_VERIFY_LEAF_SIGNATURE`,
      `UNABLE_TO_GET_ISSUER_CERT_LOCALLY`, `CERT_HAS_EXPIRED`, `ERR_SSL_WRONG_VERSION_NUMBER`):
@@ -464,7 +464,7 @@ install on this computer instead; the VPS can still be deployed later.
    target success. Report other failures and their script-provided recovery action.
    For `stale_session`, reload the plugin session. A lower version number is not stale: `algorover_runtime_start` installs this plugin's bound release.
    If its message is `runtime_platform_unsupported`, this plugin release has no Runtime for the user's operating system and CPU yet: say so, do not retry, repair or reload, and suggest updating the plugin after a release for that platform.
-   For `host_start_timeout`, tell the user that reloading or restarting Cursor does not
+   For `host_start_timeout`, tell the user that reloading or restarting Claude Code does not
    restart the Host. The Host is a separate sign-in task. Do not invent a shell command
    to end it, and do not ask the user to end it in Task Scheduler. Call
    `algorover_runtime_start` again: that start ends a Host task that is still occupying
