@@ -1,19 +1,21 @@
+# AlgoRover
+
+> **AlgoRover is a free AI quant agent for Codex, Claude Code, and Cursor.**
+>
+> Explore 4,000+ trading strategies, customize them through AI conversations, and run reproducible backtests, exchange demo trading, and user-approved live execution.
+>
+> **Credentials:** API keys stay local. **Runtime:** run on your computer or your own VPS. **Licensing:** plugin manifests, configuration, and documentation are MIT licensed; the Runtime is proprietary.
+
+[English](README.md) · [简体中文](README.zh-CN.md) · [한국어](README.ko.md)
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./readme-assets/algorover-logo-white.svg">
   <img src="./readme-assets/algorover-logo.png" alt="AlgoRover logo" width="320">
 </picture>
 
-# AlgoRover
-
-AlgoRover, formerly EdgePilot. This is the same project under a new brand, with its development history and community preserved.
-
-A free AI tool for quantitative strategy research, reproducible backtesting, and local execution in Codex, Claude Code, or Cursor. Explore 4,000+ strategies, customize them through AI conversations, and test your own trading ideas.
-
-Use **AlgoRover Live** for strategy discovery, historical backtesting, exchange demo trading, and automated live execution.
-
 [Website](https://algorover.ai) · [Live Guide](https://algorover.ai/en/live/) · [Strategies](https://algorover.ai/en/strategies/) · [Evidence](https://algorover.ai/en/evidence/) · [Security](https://algorover.ai/en/security/) · [Blog](https://blog.algorover.ai/)
 
-[Capabilities](#capabilities) · [Quick start](#quick-start) · [Workflow](#see-the-workflow) · [Compatibility](#requirements-and-compatibility) · [Security](#security-and-control) · [FAQ](#frequently-asked-questions) · [Support](#documentation-and-support)
+[Capabilities](#capabilities) · [Quick start](#quick-start) · [Workflow](#see-the-workflow) · [Compatibility](#requirements-and-compatibility) · [Security](#security-and-control) · [FAQ](#frequently-asked-questions) · [Support](#documentation-and-support) · [License](#license)
 
 [X / Twitter](https://x.com/AlgoRoverQuant) · [Discord](https://discord.gg/DvsA8gQ3Y) · [Telegram](https://t.me/+TGpYk0NlbD4zYTVk)
 
@@ -23,7 +25,7 @@ Describe a research question, inspect the strategy evidence, and review results 
 
 ## What is AlgoRover?
 
-AlgoRover connects natural language requests in your AI workspace to local research and execution tools. Its library contains 4,000+ strategies, including strategies uploaded and shared by experienced traders. Browse the library, inspect a strategy, and install it with one click.
+AlgoRover, formerly EdgePilot, connects natural language requests in your AI workspace to local research and execution tools. Its library contains 4,000+ strategies, including strategies uploaded and shared by experienced traders. Browse the library, inspect a strategy, and install it with one click.
 
 Through AI conversations, you can change trading rules, parameters, markets, and risk limits. You can also bring in strategies from other sources and validate your own version with reproducible historical backtests.
 
@@ -85,20 +87,20 @@ Choose your AI workspace, then install AlgoRover Live.
 ### Codex
 
 ```bash
-codex plugin marketplace add AlgoRover/algorover-hub --ref main
+codex plugin marketplace add Frederica123/algorover-hub --ref main
 codex plugin add algorover@algorover
 ```
 
 ### Claude Code
 
 ```bash
-claude plugin marketplace add AlgoRover/algorover-hub@main
+claude plugin marketplace add Frederica123/algorover-hub@main
 claude plugin install algorover@algorover
 ```
 
 ### Cursor
 
-Use the Cursor-specific plugin copies:
+Use the Cursor-specific plugin:
 
 | Plugin | Plugin directory |
 | :--- | :--- |
@@ -209,9 +211,15 @@ Update the plugin and reload its session. Runtime repair cannot change the plugi
 | [Evidence](https://algorover.ai/en/evidence/) | Reproducible research and stress testing |
 | [Security](https://algorover.ai/en/security/) | Credentials, data, and control boundaries |
 | [Blog](https://blog.algorover.ai/) | Research methods and worked examples |
-| [GitHub Issues](https://github.com/algorover/algorover-hub/issues) | Installation and plugin bugs |
+| [GitHub Issues](https://github.com/Frederica123/algorover-hub/issues) | Installation and plugin bugs |
 
 When reporting an issue, include the plugin version, host, operating system, steps to reproduce, and a redacted error message. Never include credentials, tokens, or private account information.
+
+## License
+
+Plugin manifests, configuration files, and documentation are covered by the [MIT License](LICENSE). See [License scope](LICENSE-SCOPE.md) for the exact file coverage and third-party notices.
+
+The AlgoRover Runtime is proprietary and is distributed separately. The MIT grant does not cover Runtime source or binaries, trading and backtest engines, or the bundled `resolver.mjs` and `bootstrap.mjs` integration code. Runtime use is governed by its applicable terms and the [AlgoRover Terms of Service](https://algorover.ai/terms/).
 
 ## Distribution and release provenance
 
