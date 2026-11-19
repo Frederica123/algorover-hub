@@ -9,7 +9,6 @@ These icons identify the venues listed in the repository README. Brand names and
 | Binance, Bitget, Gate.io, Kraken | [Web3 Icons branded exchange SVGs](https://github.com/0xa3k5/web3icons/tree/main/raw-svgs/exchanges/branded) |
 | Bybit | [Bybit official App Store listing](https://apps.apple.com/app/id1488296980) |
 | Deribit | [Deribit logo by Satechirohs on Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Deribit_logo.svg), CC BY-SA 4.0, unmodified |
-| DigiFinex | [DigiFinex official App Store listing](https://apps.apple.com/app/id1397735851) |
 | dYdX | [dYdX official favicon](https://dydx.trade/favicon.svg) |
 | Hyperliquid | [Hyperliquid official app icon](https://hyperliquid.xyz/apple-touch-icon.png) |
 | Longbridge | [Longbridge official app icon](https://assets.wbrks.com/assets/manifest-icons/icon-128x128.png) |

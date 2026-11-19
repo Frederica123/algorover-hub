@@ -188,7 +188,7 @@ Check the [Research Guide](https://algorover.ai/en/research/) or [Live Guide](ht
 
 #### AlgoRover Live
 
-Account data and execution integrations for 13 exchanges:
+Account data and execution integrations for 12 exchanges:
 
 | Exchange / broker | Account reading | Execution integration |
 | :--- | :---: | :---: |
@@ -198,7 +198,6 @@ Account data and execution integrations for 13 exchanges:
 | <img src="./readme-assets/exchanges/bitget.svg" width="24" height="24" align="absmiddle" alt=""> Bitget | ✓ | ✓ |
 | <img src="./readme-assets/exchanges/bybit.jpg" width="24" height="24" align="absmiddle" alt=""> Bybit | ✓ | ✓ |
 | <img src="./readme-assets/exchanges/deribit.svg" width="24" height="24" align="absmiddle" alt=""> Deribit | ✓ | ✓ |
-| <img src="./readme-assets/exchanges/digifinex.jpg" width="24" height="24" align="absmiddle" alt=""> DigiFinex | ✓ | ✓ |
 | <img src="./readme-assets/exchanges/dydx.svg" width="24" height="24" align="absmiddle" alt=""> dYdX | ✓ | ✓ |
 | <img src="./readme-assets/exchanges/gateio.svg" width="24" height="24" align="absmiddle" alt=""> Gate.io | ✓ | ✓ |
 | <img src="./readme-assets/exchanges/hyperliquid.png" width="24" height="24" align="absmiddle" alt=""> Hyperliquid | ✓ | ✓ |
@@ -216,7 +215,6 @@ Public historical candlesticks for backtesting, without trading credentials:
 | :--- | :--- |
 | <img src="./readme-assets/exchanges/binance.svg" width="24" height="24" align="absmiddle" alt=""> Binance | USD-M and COIN-M futures |
 | <img src="./readme-assets/exchanges/okx.jpg" width="24" height="24" align="absmiddle" alt=""> OKX | Historical candlesticks |
-| <img src="./readme-assets/exchanges/digifinex.jpg" width="24" height="24" align="absmiddle" alt=""> DigiFinex | Perpetual futures |
 
 ## Security and control
 
