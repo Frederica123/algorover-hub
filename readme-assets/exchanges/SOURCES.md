@@ -5,14 +5,18 @@ These icons identify the venues listed in the repository README. Brand names and
 | Icon | Source |
 | :--- | :--- |
 | Alpaca | [Alpaca official favicon](https://files.alpaca.markets/webassets/favicon.svg) |
-| Architect AX (light and dark) | [Architect official AX brand assets](https://architect.co/brand/) |
-| Binance, Bitget, Gate.io, Kraken | [Web3 Icons branded exchange SVGs](https://github.com/0xa3k5/web3icons/tree/main/raw-svgs/exchanges/branded) |
+| Aster | [Aster official app icon](https://static.asterdexfx.com/cloud-futures/static/images/aster/apple-touch-icon.png) |
+| Binance, Bitget, Gate.io | [Web3 Icons branded exchange SVGs](https://github.com/0xa3k5/web3icons/tree/main/raw-svgs/exchanges/branded) |
+| Bithumb | [Bithumb official app icon](https://content.bithumb.com/resources/img/comm/seo/apple-icon-180x180-261112.png) |
 | Bybit | [Bybit official App Store listing](https://apps.apple.com/app/id1488296980) |
 | Deribit | [Deribit logo by Satechirohs on Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Deribit_logo.svg), CC BY-SA 4.0, unmodified |
 | dYdX | [dYdX official favicon](https://dydx.trade/favicon.svg) |
 | Hyperliquid | [Hyperliquid official app icon](https://hyperliquid.xyz/apple-touch-icon.png) |
+| Kalshi | [Kalshi official GitHub profile avatar](https://github.com/Kalshi) |
+| Lighter | [Lighter official app icon](https://lighter.xyz/media/apple-touch-icon.png) |
 | Longbridge | [Longbridge official app icon](https://assets.wbrks.com/assets/manifest-icons/icon-128x128.png) |
 | OKX | [OKX official App Store listing](https://apps.apple.com/app/id1327268470) |
+| Upbit | [Upbit official favicon](https://www.upbit.com/favicon.jpg), served as PNG |
 
 The Web3 Icons SVGs above are used under the MIT License:
 

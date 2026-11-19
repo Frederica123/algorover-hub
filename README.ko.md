@@ -159,22 +159,25 @@ AlgoRover Live를 설정하고 Dashboard를 연 다음 대화형 전략 안내�
 
 ### 거래소 호환성
 
-다음 12개 거래소 또는 브로커에 대해 계정 조회와 거래 실행 연동을 제공합니다.
+다음 15개 거래 플랫폼에 대해 계정 조회와 거래 실행 연동을 제공합니다.
 
 | 거래소 또는 브로커 | 계정 조회 | 거래 실행 연동 |
 | :--- | :---: | :---: |
 | <img src="./readme-assets/exchanges/alpaca.svg" width="24" height="24" align="absmiddle" alt=""> Alpaca | ✓ | ✓ |
-| <picture><source media="(prefers-color-scheme: dark)" srcset="./readme-assets/exchanges/architect-ax-white.svg"><img src="./readme-assets/exchanges/architect-ax.svg" width="24" height="24" align="absmiddle" alt=""></picture> Architect AX | ✓ | ✓ |
+| <img src="./readme-assets/exchanges/aster.png" width="24" height="24" align="absmiddle" alt=""> Aster | ✓ | ✓ |
 | <img src="./readme-assets/exchanges/binance.svg" width="24" height="24" align="absmiddle" alt=""> Binance | ✓ | ✓ |
 | <img src="./readme-assets/exchanges/bitget.svg" width="24" height="24" align="absmiddle" alt=""> Bitget | ✓ | ✓ |
+| <img src="./readme-assets/exchanges/bithumb.png" width="24" height="24" align="absmiddle" alt=""> Bithumb | ✓ | ✓ |
 | <img src="./readme-assets/exchanges/bybit.jpg" width="24" height="24" align="absmiddle" alt=""> Bybit | ✓ | ✓ |
 | <img src="./readme-assets/exchanges/deribit.svg" width="24" height="24" align="absmiddle" alt=""> Deribit | ✓ | ✓ |
 | <img src="./readme-assets/exchanges/dydx.svg" width="24" height="24" align="absmiddle" alt=""> dYdX | ✓ | ✓ |
 | <img src="./readme-assets/exchanges/gateio.svg" width="24" height="24" align="absmiddle" alt=""> Gate.io | ✓ | ✓ |
 | <img src="./readme-assets/exchanges/hyperliquid.png" width="24" height="24" align="absmiddle" alt=""> Hyperliquid | ✓ | ✓ |
-| <img src="./readme-assets/exchanges/kraken.svg" width="24" height="24" align="absmiddle" alt=""> Kraken | ✓ | ✓ |
+| <img src="./readme-assets/exchanges/kalshi.png" width="24" height="24" align="absmiddle" alt=""> Kalshi | ✓ | ✓ |
+| <img src="./readme-assets/exchanges/lighter.png" width="24" height="24" align="absmiddle" alt=""> Lighter | ✓ | ✓ |
 | <img src="./readme-assets/exchanges/longbridge.png" width="24" height="24" align="absmiddle" alt=""> Longbridge | ✓ | ✓ |
 | <img src="./readme-assets/exchanges/okx.jpg" width="24" height="24" align="absmiddle" alt=""> OKX | ✓ | ✓ |
+| <img src="./readme-assets/exchanges/upbit.png" width="24" height="24" align="absmiddle" alt=""> Upbit | ✓ | ✓ |
 
 사용 가능한 거래 모드는 설치된 어댑터와 계정 환경에 따라 달라집니다. Longbridge를 사용하려면 이를 지원하는 Runtime이 필요합니다.
 

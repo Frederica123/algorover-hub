@@ -159,22 +159,25 @@ claude plugin install algorover@algorover
 
 ### 交易所兼容性
 
-以下 12 家交易所或券商支持账户读取与执行集成：
+以下 15 个交易场所支持账户读取与执行集成：
 
 | 交易所或券商 | 账户读取 | 执行集成 |
 | :--- | :---: | :---: |
 | <img src="./readme-assets/exchanges/alpaca.svg" width="24" height="24" align="absmiddle" alt=""> Alpaca | ✓ | ✓ |
-| <picture><source media="(prefers-color-scheme: dark)" srcset="./readme-assets/exchanges/architect-ax-white.svg"><img src="./readme-assets/exchanges/architect-ax.svg" width="24" height="24" align="absmiddle" alt=""></picture> Architect AX | ✓ | ✓ |
+| <img src="./readme-assets/exchanges/aster.png" width="24" height="24" align="absmiddle" alt=""> Aster | ✓ | ✓ |
 | <img src="./readme-assets/exchanges/binance.svg" width="24" height="24" align="absmiddle" alt=""> Binance | ✓ | ✓ |
 | <img src="./readme-assets/exchanges/bitget.svg" width="24" height="24" align="absmiddle" alt=""> Bitget | ✓ | ✓ |
+| <img src="./readme-assets/exchanges/bithumb.png" width="24" height="24" align="absmiddle" alt=""> Bithumb | ✓ | ✓ |
 | <img src="./readme-assets/exchanges/bybit.jpg" width="24" height="24" align="absmiddle" alt=""> Bybit | ✓ | ✓ |
 | <img src="./readme-assets/exchanges/deribit.svg" width="24" height="24" align="absmiddle" alt=""> Deribit | ✓ | ✓ |
 | <img src="./readme-assets/exchanges/dydx.svg" width="24" height="24" align="absmiddle" alt=""> dYdX | ✓ | ✓ |
 | <img src="./readme-assets/exchanges/gateio.svg" width="24" height="24" align="absmiddle" alt=""> Gate.io | ✓ | ✓ |
 | <img src="./readme-assets/exchanges/hyperliquid.png" width="24" height="24" align="absmiddle" alt=""> Hyperliquid | ✓ | ✓ |
-| <img src="./readme-assets/exchanges/kraken.svg" width="24" height="24" align="absmiddle" alt=""> Kraken | ✓ | ✓ |
+| <img src="./readme-assets/exchanges/kalshi.png" width="24" height="24" align="absmiddle" alt=""> Kalshi | ✓ | ✓ |
+| <img src="./readme-assets/exchanges/lighter.png" width="24" height="24" align="absmiddle" alt=""> Lighter | ✓ | ✓ |
 | <img src="./readme-assets/exchanges/longbridge.png" width="24" height="24" align="absmiddle" alt=""> Longbridge | ✓ | ✓ |
 | <img src="./readme-assets/exchanges/okx.jpg" width="24" height="24" align="absmiddle" alt=""> OKX | ✓ | ✓ |
+| <img src="./readme-assets/exchanges/upbit.png" width="24" height="24" align="absmiddle" alt=""> Upbit | ✓ | ✓ |
 
 可用交易模式取决于已安装的适配器与账户环境。Longbridge 需要包含 Longbridge 支持的 Runtime。
 
