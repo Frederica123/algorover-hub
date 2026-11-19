@@ -3,10 +3,6 @@
     {
       "name": "algorover",
       "source": "./plugins/claude/algorover"
-    },
-    {
-      "name": "algorover-research",
-      "source": "./plugins/claude/algorover-research"
     }
   ],
   "name": "algorover",
@@ -14,6 +10,6 @@
     "name": "AlgoRover"
   },
   "metadata": {
-    "description": "Official AlgoRover Live and Research plugins."
+    "description": "Official AlgoRover Live plugin."
   }
 }

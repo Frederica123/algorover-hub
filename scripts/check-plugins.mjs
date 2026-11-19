@@ -29,8 +29,12 @@ export function treeDigest(root) {
 export function checkPlugins(root = repositoryRoot) {
   const json = (path) => JSON.parse(readFileSync(join(root, path), "utf8"));
   const release = json("release.json");
+  assert.deepEqual(release.products.map(({ product, name }) => ({ product, name })),
+    [{ product: "live", name: "algorover" }], "Only AlgoRover Live is distributed");
   let checked = 0;
   for (const assistant of assistants) {
+    assert.deepEqual(readdirSync(join(root, "plugins", assistant)).sort(), ["algorover"],
+      `plugins/${assistant}: unexpected plugin files or directories`);
     const marketplacePath = assistant === "codex"
       ? ".agents/plugins/marketplace.json" : `.${assistant}-plugin/marketplace.json`;
     const marketplace = json(marketplacePath);

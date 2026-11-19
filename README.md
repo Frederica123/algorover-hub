@@ -9,11 +9,11 @@ AlgoRover, formerly EdgePilot. This is the same project under a new brand, with 
 
 A free AI tool for quantitative strategy research, reproducible backtesting, and local execution in Codex, Claude Code, or Cursor. Explore 4,000+ strategies, customize them through AI conversations, and test your own trading ideas.
 
-Use **AlgoRover Research** for strategy discovery and historical backtesting. Use **AlgoRover Live** for exchange demo trading and automated live execution.
+Use **AlgoRover Live** for strategy discovery, historical backtesting, exchange demo trading, and automated live execution.
 
-[Website](https://algorover.ai) · [Research Guide](https://algorover.ai/en/research/) · [Live Guide](https://algorover.ai/en/live/) · [Strategies](https://algorover.ai/en/strategies/) · [Evidence](https://algorover.ai/en/evidence/) · [Security](https://algorover.ai/en/security/) · [Blog](https://blog.algorover.ai/)
+[Website](https://algorover.ai) · [Live Guide](https://algorover.ai/en/live/) · [Strategies](https://algorover.ai/en/strategies/) · [Evidence](https://algorover.ai/en/evidence/) · [Security](https://algorover.ai/en/security/) · [Blog](https://blog.algorover.ai/)
 
-[Choose your edition](#choose-your-edition) · [Quick start](#quick-start) · [Workflow](#see-the-workflow) · [Compatibility](#requirements-and-compatibility) · [Security](#security-and-control) · [FAQ](#frequently-asked-questions) · [Support](#documentation-and-support)
+[Capabilities](#capabilities) · [Quick start](#quick-start) · [Workflow](#see-the-workflow) · [Compatibility](#requirements-and-compatibility) · [Security](#security-and-control) · [FAQ](#frequently-asked-questions) · [Support](#documentation-and-support)
 
 [X / Twitter](https://x.com/AlgoRoverQuant) · [Discord](https://discord.gg/DvsA8gQ3Y) · [Telegram](https://t.me/+TGpYk0NlbD4zYTVk)
 
@@ -27,24 +27,22 @@ AlgoRover connects natural language requests in your AI workspace to local resea
 
 Through AI conversations, you can change trading rules, parameters, markets, and risk limits. You can also bring in strategies from other sources and validate your own version with reproducible historical backtests.
 
-Research uses public market data to discover, configure, compare, and backtest strategies. Research data and reports remain local. Live adds exchange demo and automated live trading through an API connection to your own exchange account. Starting live execution requires your confirmation of the strategy and risk settings.
+AlgoRover Live uses public market data to discover, configure, compare, and backtest strategies. Data and reports remain local. Connect your own exchange account through an API connection for exchange demo and automated live trading. Starting live execution requires your confirmation of the strategy and risk settings.
 
-Existing installations may still show **EdgePilot** or **EdgePilot Research** and use legacy `edgepilot` identifiers. Existing users do not need to reinstall or rename their configuration because of the rebrand. For new installations, use the current AlgoRover commands below.
+Existing installations may still show **EdgePilot** and use legacy `edgepilot` identifiers. Existing users do not need to reinstall or rename their configuration because of the rebrand. For new installations, use the current AlgoRover commands below.
 
-## Choose your edition
+## Capabilities
 
-| Capability | AlgoRover Research | AlgoRover Live |
-| :--- | :---: | :---: |
-| Strategy discovery and configuration | ✓ | ✓ |
-| Historical backtesting | ✓ | ✓ |
-| Research results and reports | ✓ | ✓ |
-| Exchange demo trading | — | ✓ |
-| Live trading | — | ✓ |
-| Trading credentials | Not required or accepted | Configured locally when required |
+| Capability | AlgoRover Live |
+| :--- | :---: |
+| Strategy discovery and configuration | ✓ |
+| Historical backtesting | ✓ |
+| Strategy results and reports | ✓ |
+| Exchange demo trading | ✓ |
+| Live trading | ✓ |
+| Trading credentials | Configured locally when required |
 
-Start with Research to explore and backtest without connecting a trading account. Choose Live if you also need exchange demo or live execution.
-
-[Explore Research](https://algorover.ai/en/research/) · [Explore Live](https://algorover.ai/en/live/)
+[Explore AlgoRover Live](https://algorover.ai/en/live/)
 
 ## What can you do?
 
@@ -82,18 +80,9 @@ Use AlgoRover Live to check whether this strategy supports Demo mode on the sele
 
 ## Quick start
 
-Choose your AI workspace, then install Research or Live. If you install both editions, add the marketplace only once.
+Choose your AI workspace, then install AlgoRover Live.
 
 ### Codex
-
-Research:
-
-```bash
-codex plugin marketplace add AlgoRover/algorover-hub --ref main
-codex plugin add algorover-research@algorover
-```
-
-Live:
 
 ```bash
 codex plugin marketplace add AlgoRover/algorover-hub --ref main
@@ -101,15 +90,6 @@ codex plugin add algorover@algorover
 ```
 
 ### Claude Code
-
-Research:
-
-```bash
-claude plugin marketplace add AlgoRover/algorover-hub@main
-claude plugin install algorover-research@algorover
-```
-
-Live:
 
 ```bash
 claude plugin marketplace add AlgoRover/algorover-hub@main
@@ -120,12 +100,11 @@ claude plugin install algorover@algorover
 
 Use the Cursor-specific plugin copies:
 
-| Edition | Plugin directory |
+| Plugin | Plugin directory |
 | :--- | :--- |
-| Research | `plugins/cursor/algorover-research` |
-| Live | `plugins/cursor/algorover` |
+| AlgoRover Live | `plugins/cursor/algorover` |
 
-Copy the selected directory into Cursor's local plugin directory, then reload the window:
+Copy this directory into Cursor's local plugin directory, then reload the window:
 
 | Platform | Local plugin directory |
 | :--- | :--- |
@@ -136,13 +115,7 @@ Each assistant has its own plugin copy and host bindings. For Teams or Enterpris
 
 ### Start your first session
 
-Reload plugins or start a new session after installation. For Research, paste this into your AI chat:
-
-```text
-Set up AlgoRover Research, open the Dashboard, and start the interactive strategy onboarding.
-```
-
-For Live:
+Reload plugins or start a new session after installation, then paste this into your AI chat:
 
 ```text
 Set up AlgoRover Live, open the Dashboard, and start the interactive strategy onboarding. Do not start trading.
@@ -151,8 +124,6 @@ Set up AlgoRover Live, open the Dashboard, and start the interactive strategy on
 Follow the setup prompts. Plugin installation and Runtime startup are separate steps.
 
 ## See the workflow
-
-![AlgoRover research workflow](./readme-assets/research-workflow.gif)
 
 | Step | What you do | What to inspect |
 | :--- | :--- | :--- |
@@ -173,16 +144,16 @@ Historical and simulated results are not guarantees of future performance.
 | Local Runtime | Perform research, backtesting, and supported execution tasks |
 | Dashboard | Setup, results, and operating controls |
 
-This repository is the marketplace for plugin distribution. Runtime downloads are delivered through each product's public channel.
+This repository is the marketplace for plugin distribution. Runtime downloads are delivered through AlgoRover Live's public channel.
 
 ## Requirements and compatibility
 
 - Node.js must be available to the host.
 - The AI workspace must permit the required plugins and local processes.
-- Runtime compatibility depends on the product, operating system, and release channel.
+- Runtime compatibility depends on the operating system and release channel.
 - Live login and credential setup take place in the Dashboard.
 
-Check the [Research Guide](https://algorover.ai/en/research/) or [Live Guide](https://algorover.ai/en/live/) before installation.
+Check the [Live Guide](https://algorover.ai/en/live/) before installation.
 
 ### Exchange compatibility
 
@@ -207,18 +178,8 @@ Account data and execution integrations for 12 exchanges:
 
 Available trading modes depend on the installed adapters and account environment. Longbridge requires a Runtime with Longbridge support.
 
-#### AlgoRover Research
-
-Public historical candlesticks for backtesting, without trading credentials:
-
-| Data source | Historical backtest data |
-| :--- | :--- |
-| <img src="./readme-assets/exchanges/binance.svg" width="24" height="24" align="absmiddle" alt=""> Binance | USD-M and COIN-M futures |
-| <img src="./readme-assets/exchanges/okx.jpg" width="24" height="24" align="absmiddle" alt=""> OKX | Historical candlesticks |
-
 ## Security and control
 
-- Research does not connect trading accounts, accept trading credentials, or place orders.
 - Live API keys and trading credentials remain local.
 - Starting live execution requires your confirmation of the strategy and risk settings.
 - Funds remain in your exchange account; AlgoRover does not custody user funds.
@@ -227,21 +188,9 @@ Read the [Security Overview](https://algorover.ai/en/security/), [Privacy Policy
 
 ## Frequently asked questions
 
-### Which edition should I install first?
-
-Choose Research for strategy discovery and historical backtesting. Choose Live when you also need demo or live execution workflows.
-
 ### Does installing the plugin start trading?
 
 No. Installation does not start trading. Runtime setup and execution are separate actions.
-
-### Do I need exchange API keys for Research?
-
-No. Research does not require or accept trading credentials.
-
-### Can I install both editions?
-
-Yes. They serve different workflows. Enable only one marketplace source for each product to avoid conflicting copies.
 
 ### The plugin is installed. Why is the Runtime unavailable?
 
@@ -255,7 +204,6 @@ Update the plugin and reload its session. Runtime repair cannot change the plugi
 
 | Resource | Use it for |
 | :--- | :--- |
-| [Research Guide](https://algorover.ai/en/research/) | Installation and research workflows |
 | [Live Guide](https://algorover.ai/en/live/) | Demo and live execution workflows |
 | [Strategy Library](https://algorover.ai/en/strategies/) | Discover, compare, and install strategies |
 | [Evidence](https://algorover.ai/en/evidence/) | Reproducible research and stress testing |
@@ -275,11 +223,11 @@ New installation marketplace ID: `algorover`.
 
 ## Plugin maintenance
 
-Each `plugins/<assistant>/<product>` directory serves only that assistant. Keep only
+Each `plugins/<assistant>/algorover` directory serves only that assistant. Keep only
 its own plugin manifest, use its MCP launch configuration, and read that same manifest
 in the resolver and VPS copy list. Skills must name the assistant they ship with.
 Runtime code, discovery schemas, delivery bindings, and artwork can be shared across
-assistants.
+assistants. Publish only the `algorover` Live plugin in each marketplace and release record.
 
 After generating or editing plugin copies, run:
 

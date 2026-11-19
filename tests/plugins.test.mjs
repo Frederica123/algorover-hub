@@ -39,8 +39,6 @@ for (const assistant of assistants) {
         rmSync(temporary, { recursive: true, force: true });
       }
     });
-    const live = release.products.find((product) => product.product === "live");
-    if (product !== live) continue;
     test(`${assistant} VPS bundle contains a working assistant-specific resolver`, () => {
       const temporary = mkdtempSync(join(tmpdir(), "algorover-vps-bundle-test-"));
       try {
